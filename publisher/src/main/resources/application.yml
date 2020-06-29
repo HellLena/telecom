@@ -1,0 +1,9 @@
+server:
+  port: 8085
+
+logging:
+  file:
+    name: logs/publisher.log
+
+subscriber:
+  url: http://localhost:8084

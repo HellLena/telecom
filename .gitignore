@@ -1,4 +1,5 @@
 .idea
 *.iml
-logs
+publisher/logs
+subscriber/logs
 target

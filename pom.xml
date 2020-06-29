@@ -11,7 +11,7 @@
 
   <modules>
     <module>publisher</module>
-    <module>subsriber</module>
+    <module>subscriber</module>
   </modules>
 
 </project>

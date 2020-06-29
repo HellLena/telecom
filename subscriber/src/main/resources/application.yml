@@ -1,0 +1,6 @@
+server:
+  port: 8084
+
+logging:
+  file:
+    name: logs/subscriber.log
