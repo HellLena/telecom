@@ -1,7 +1,7 @@
-package com.example.telecom.service;
+package com.example.telecom.publisher.service;
 
-import com.example.telecom.model.Message;
-import com.example.telecom.model.enumeration.ActionType;
+import com.example.telecom.publisher.model.Message;
+import com.example.telecom.publisher.model.enumeration.ActionType;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -47,8 +47,7 @@ public class PublisherService {
 
       try {
         HttpEntity<String> request = new HttpEntity<>(objectMapper.writeValueAsString(message), headers);
-        String resultAsJsonStr = restTemplate.postForObject(subscriberUrl, request, String.class);
-        JsonNode root = objectMapper.readTree(resultAsJsonStr);
+        restTemplate.postForObject(subscriberUrl, request, String.class);
         log.info("Sent message: {}", message);
       } catch (JsonProcessingException | RestClientException e) {
         log.error("Error while processing message: {}, error: {}", message, e.getMessage());

@@ -1,4 +1,4 @@
-package com.example.telecom;
+package com.example.telecom.publisher;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.WebApplicationType;

@@ -1,6 +1,7 @@
-package com.example.telecom.model;
+package com.example.telecom.publisher.model;
 
-import com.example.telecom.model.enumeration.ActionType;
+
+import com.example.telecom.publisher.model.enumeration.ActionType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
